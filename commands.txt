@@ -1,0 +1,4 @@
+## Command for initializing odoo
+python odoo-bin -r odoo -w 123456789 --addons-path=addons -d odoo -i base
+
+python odoo-bin -r odoo -w 123456789 --addons-path=addons -d odoo

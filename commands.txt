@@ -1,0 +1,13 @@
+## Command for initializing odoo
+python odoo-bin -r odoo -w 123456789 --addons-path=addons -d odoo -i base
+
+python odoo-bin -r odoo -w 123456789 --addons-path=addons -d odoo
+
+# creation of a new module: the first argument after scaffold is the module name and the last one is the directory name
+python odoo-bin scaffold school modules 
+
+# Runnnig odoo 
+python odoo-bin -r odoo -w 123456789 --addons-path=addons -d odoo 
+
+# Running the new module with the database initialization 
+python odoo-bin -r odoo -w 123456789 --addons-path=addons,modules -d odoo -i base 

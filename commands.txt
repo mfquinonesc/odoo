@@ -11,3 +11,9 @@ python odoo-bin -r odoo -w 123456789 --addons-path=addons -d odoo
 
 # Running the new module with the database initialization 
 python odoo-bin -r odoo -w 123456789 --addons-path=addons,modules -d odoo -i base 
+
+# Runnnig odoo when the model has been  updated 
+python odoo-bin -r odoo -w 123456789 --addons-path=addons,modules -d odoo -u library 
+
+# Parameters for updating the database and stablish the database, this parameters have always been use together
+-d rd-demo -u library
